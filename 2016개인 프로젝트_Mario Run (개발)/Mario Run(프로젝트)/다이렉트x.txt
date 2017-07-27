@@ -1,0 +1,70 @@
+	LPDIRECT3DTEXTURE9 texture = LoadTextureFromFile("image.png");
+	D3DSURFACE_DESC desc;
+	texture->GetLevelDesc(0, &desc);
+	RECT rect = {0,0,desc.Width, desc.Height};
+	D3DXMATRIX mat;
+	D3DXVECTOR2 scalingCenter = D3DXVECTOR2(0, 0);
+	D3DXVECTOR2 scale = D3DXVECTOR2(1, 1);
+	D3DXVECTOR2 rotationCenter = D3DXVECTOR2(desc.Width/2, desc.Height/2);//회전중심
+	float rot = D3DXToRadian(45);
+	D3DXVECTOR2 pos = D3DXVECTOR2(100, 100);
+
+	LPDIRECT3DTEXTURE9 texture2 = LoadTextureFromFile("image2.png");
+	D3DSURFACE_DESC desc2;
+	texture2->GetLevelDesc(0, &desc2);
+	RECT rect2 = { 0,0,desc2.Width, desc2.Height };
+	D3DXMATRIX mat2;
+	D3DXVECTOR2 scalingCenter2 = D3DXVECTOR2(0, 0);
+	D3DXVECTOR2 scale2 = D3DXVECTOR2(1, 1);
+	D3DXVECTOR2 rotationCenter2 = D3DXVECTOR2(desc2.Width / 2, desc2.Height / 2);//회전중심
+	float rot2 = D3DXToRadian(0);
+	D3DXVECTOR2 pos2 = D3DXVECTOR2(0, 0);
+
+D3DXMatrixTransformation2D(&mat, &scalingCenter, 0, &scale, &rotationCenter, rot, &pos);
+		D3DXMatrixTransformation2D(&mat2, &scalingCenter2, 0, &scale2, &rotationCenter2, rot2, &pos2);
+		mat2 *= mat;
+		if (GetAsyncKeyState(VK_LEFT) & 0x8000)
+		{
+			rot += D3DXToRadian(1);
+		}
+		if (GetAsyncKeyState(VK_RIGHT) & 0x8000)
+		{
+			rot += D3DXToRadian(-1);
+		}
+		if (GetAsyncKeyState(VK_UP) & 0x8000)
+		{
+			scale += D3DXVECTOR2(0.1f, 0.1f);
+		}
+		if (GetAsyncKeyState(VK_DOWN) & 0x8000)
+		{
+			scale.x /= 1.1f;
+			scale.y /= 1.1f;
+		}
+		if (GetAsyncKeyState('W') & 0x8000)
+		{
+			pos += D3DXVECTOR2(0, -1);
+		}
+		if (GetAsyncKeyState('S') & 0x8000)
+		{
+			pos += D3DXVECTOR2(0, 1);
+		}
+		if (GetAsyncKeyState('A') & 0x8000)
+		{
+			pos += D3DXVECTOR2(-1, 0);
+		}
+		if (GetAsyncKeyState('D') & 0x8000)
+		{
+			pos += D3DXVECTOR2(1, 0);
+		}
+		g_pd3dDevice->Clear(0, NULL, D3DCLEAR_TARGET, D3DCOLOR_ARGB(255,0,0,0),1.0f,0 );
+		g_pd3dDevice->BeginScene();
+		g_pd3dSprite->Begin(D3DXSPRITE_ALPHABLEND);
+		g_pd3dSprite->SetTransform(&mat);
+		g_pd3dSprite->Draw(texture, &rect, NULL, NULL, D3DCOLOR_ARGB(255, 255, 255, 255));
+		g_pd3dSprite->SetTransform(&mat2);
+		g_pd3dSprite->Draw(texture2, &rect2, NULL, NULL, D3DCOLOR_ARGB(255, 255, 255, 255));
+		g_pd3dSprite->End();
+		g_pd3dDevice->EndScene();
+		g_pd3dDevice->Present(NULL, NULL, NULL, NULL);
+	texture->Release();
+	ReleaseD3D();

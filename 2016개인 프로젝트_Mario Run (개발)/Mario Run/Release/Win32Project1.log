@@ -1,0 +1,38 @@
+﻿  Animation.cpp
+h:\선린\1학년\소전\게임프로그래밍\framework\win32project1\iobject.h(2): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  Background.cpp
+h:\선린\1학년\소전\게임프로그래밍\framework\win32project1\IObject.h(2): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  Building.cpp
+h:\선린\1학년\소전\게임프로그래밍\framework\win32project1\IObject.h(2): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  Coin.cpp
+h:\선린\1학년\소전\게임프로그래밍\framework\win32project1\IObject.h(2): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  Drop.cpp
+h:\선린\1학년\소전\게임프로그래밍\framework\win32project1\IObject.h(2): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  GameScene.cpp
+h:\선린\1학년\소전\게임프로그래밍\framework\win32project1\IObject.h(2): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  Global.cpp
+h:\선린\1학년\소전\게임프로그래밍\framework\win32project1\IObject.h(2): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  HowScene.cpp
+h:\선린\1학년\소전\게임프로그래밍\framework\win32project1\IObject.h(2): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  initialize.cpp
+h:\선린\1학년\소전\게임프로그래밍\framework\win32project1\Initialize.h(2): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  IObject.cpp
+h:\선린\1학년\소전\게임프로그래밍\framework\win32project1\IObject.h(2): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  main.cpp
+h:\선린\1학년\소전\게임프로그래밍\framework\win32project1\Initialize.h(2): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  MainScene.cpp
+h:\선린\1학년\소전\게임프로그래밍\framework\win32project1\IObject.h(2): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  Map.cpp
+h:\선린\1학년\소전\게임프로그래밍\framework\win32project1\IObject.h(2): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  Number.cpp
+h:\선린\1학년\소전\게임프로그래밍\framework\win32project1\IObject.h(2): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  Player.cpp
+h:\선린\1학년\소전\게임프로그래밍\framework\win32project1\IObject.h(2): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  Scene.cpp
+h:\선린\1학년\소전\게임프로그래밍\framework\win32project1\IObject.h(2): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  SceneManager.cpp
+h:\선린\1학년\소전\게임프로그래밍\framework\win32project1\IObject.h(2): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  Sprite.cpp
+h:\선린\1학년\소전\게임프로그래밍\framework\win32project1\iobject.h(2): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+  TextureManager.cpp
+h:\선린\1학년\소전\게임프로그래밍\framework\win32project1\TextureManager.h(2): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
